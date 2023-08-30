@@ -5,10 +5,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.App{
-    background: url("https://1.bp.blogspot.com/-d1PMQJ62KOg/YUD-I1wYryI/AAAAAAAAjqA/AOetH5pXzXgnP3In01h2WGpHIQuET9lnwCLcBGAsYHQ/w640-h360/HEROSCREEN-14092021-AURORA-HD.png");
-    background-size: cover;
-}
 input[type='file']{
     display: none;
 }
@@ -17,4 +13,23 @@ input[type='file']{
 }
 .tex{
     font-size: 1.5rem;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .tex{
+        font-size: 1rem;
+    }
+    .lable{
+        font-size: 0.7rem
+    }
+    .p{
+        font-size: 0.7rem;
+    }
+}
+
+@media  only screen and (max-width: 255px) {
+    .tex{
+        font-size: 0.8rem;
+    }
 }

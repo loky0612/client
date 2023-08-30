@@ -47,11 +47,14 @@ function App() {
           <div className='flex my-5 justify-center items-center'>
             <h1 className='tex font-semibold p-5 text-center text-white'>PDF TO DOCX CONVERSION</h1>
           </div>
-          <div className=' flex justify-center my-4 mx-8 rounded-2xl border-2 border-dashed border-gray-600 cursor-pointer'>
-            <label htmlFor="in" className='lable py-20 p-4 text-center cursor-pointer w-full h-full'>Drap and drop or click</label>
+          <div className=' flex flex-col justify-center my-4 mx-8 rounded-2xl border-4 border-dashed border-gray-300 cursor-pointer'>
+            <label htmlFor="in" className='lable py-14 p-4 font-medium text-center cursor-pointer w-full h-full'>Drag and drop or click</label>
+            <div className='flex justify-center p-3'>
+              <p className='p'>{file && file.name}</p>
+            </div>
             <input type='file' id='in' placeholder='upload file' name='file' accept='application/pdf' onChange={fileHandler} />
           </div>
-          <div className='flex justify-center mt-12'>
+          <div className='flex justify-center mt-12 p-7'>
             <button type='submit' className='bg-green-300 absolute rounded-3xl py-3 px-6'><span className=' butt text-white font-medium p-5'>Convert</span></button>
           </div>
         </form>
